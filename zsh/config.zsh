@@ -1,6 +1,8 @@
-export LSCOLORS="exfxcxdxbxegedabagacad"
-export CLICOLOR=true
+# export LSCOLORS="exfxcxdxbxegedabagacad"
+export LSCOLORS='GxFxCxDxBxegedabagaced'
 
+export CLICOLOR=true
+export ZSH=$HOME/devel/dotfiles
 fpath=($ZSH/functions $fpath)
 
 autoload -U $ZSH/functions/*(:t)
