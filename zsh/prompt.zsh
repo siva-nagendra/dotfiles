@@ -52,7 +52,7 @@ need_push () {
 
 # Full path and time
 directory_name() {
-  echo "%{$fg_bold[blue]%}%~ %{$reset_color%}"
+  echo "%{$fg_bold[blue]%}%~%{$reset_color%}"
 }
 
 current_time() {
@@ -60,14 +60,4 @@ current_time() {
 }
 
 # Update the prompt
-export PROMPT=$'\n$(current_time) $(directory_name) $(git_dirty)$(need_push)\n› '
-
-# export PROMPT=$'\n$(battery_status)in $(directory_name) $(git_dirty)$(need_push)\n› '
-set_prompt () {
-  export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
-}
-
-precmd() {
-  title "zsh" "%m" "%55<...<%~"
-  set_prompt
-}
+export PROMPT=$'$(current_time) $(directory_name) $(git_dirty)$(need_push)\n› '

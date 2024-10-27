@@ -1,6 +1,8 @@
 # export LSCOLORS="exfxcxdxbxegedabagacad"
 export LSCOLORS='GxFxCxDxBxegedabagaced'
 
+export HOME="/Users/siva/"
+export DEVEL="$HOME/devel/"
 export CLICOLOR=true
 export ZSH=$HOME/devel/dotfiles
 fpath=($ZSH/functions $fpath)
