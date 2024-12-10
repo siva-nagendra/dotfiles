@@ -4,10 +4,10 @@ export LSCOLORS='GxFxCxDxBxegedabagaced'
 export HOME="/Users/siva/"
 export DEVEL="$HOME/devel/"
 export CLICOLOR=true
-export ZSH=$HOME/devel/dotfiles
-fpath=($ZSH/functions $fpath)
+export CZSH=$HOME/devel/dotfiles
+fpath=($CZSH/functions $fpath)
 
-autoload -U $ZSH/functions/*(:t)
+autoload -U $CZSH/functions/*(:t)
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
